@@ -38,3 +38,31 @@ console.log(typeof anotherId);
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
 // JavaScript is a dynamic language, which means that variables can hold values of different types during runtime.
+
+
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive) and Heap (Non-Primitive) Memory
+
+let myYoutubename = "hiteshchoudharydotcom"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne;
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email);
