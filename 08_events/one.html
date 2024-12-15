@@ -38,7 +38,7 @@
             width="200px"
             id="owl"
             src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-            alt="" onclick="alert('Owl')"
+            alt=""
           />
         </li>
         <li>
@@ -58,6 +58,16 @@
     </div>
   </body>
   <script>
+  // document.getElementById('owl').onclick = function() {
+  //   alert('owl clicked')
+  // }
 
+     // attachEvent()
+    // jQuery - on
+
+  document.getElementById('owl').addEventListener('click', function(e) {
+    // alert('owl clicked again');
+    console.log(e);
+  })
   </script>
 </html>
